@@ -1,0 +1,7 @@
+{
+  "ambientDependencies": {
+    "assert": "registry:dt/assert#0.0.0+20160317120654",
+    "express": "registry:dt/express#4.0.0+20160317120654",
+    "mongodb": "registry:dt/mongodb#2.1.0+20160328151449"
+  }
+}
