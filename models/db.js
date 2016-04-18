@@ -1,6 +1,5 @@
 /// <reference path="../typings/main.d.ts" />
 
-
 exports.url = 'mongodb://localhost:27017/blog';
 exports.mongoClient = require('mongodb').MongoClient;
 exports.salt = "agfsdga[fdpinlibdjgbim]";

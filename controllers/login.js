@@ -8,13 +8,14 @@ router.get('/', function(req, res) {
 
 router.post('/',function(req, res) {
     // 获取客户端POST的用户名和密码
-     console.log(req.body);
      var u = new user(req.body.user,req.body.password)
      u.login(function (err,ok) {
          if(err){
              res.send("error:",err);
          }else{
              if(ok){
+                 // user has logon
+                 req.session.user=u;
                  res.send('{"status":true}');
              }else{
                  res.send('{"status":false}');

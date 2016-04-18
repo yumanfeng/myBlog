@@ -16,7 +16,7 @@ function checkValue(user, psw) {
     xmlHttpRequest.onreadystatechange = checkResponse;
     //3.初始化XMLHttpRequest组建    
     xmlHttpRequest.open("POST", url, true);
-    xmlHttpRequest.setRequestHeader("Content-Type","application/json")
+    xmlHttpRequest.setRequestHeader("Content-Type","application/json");
     //4.发送请求    
     xmlHttpRequest.send(JSON.stringify({
         "user": user,
@@ -32,7 +32,7 @@ function checkResponse() {
         // 反序列化
         var resp = JSON.parse(b);
         if (resp.status) {
-            window.location.href = "/";
+            window.location.href = "/panel";
         } else {
             $("#danger").html("Username or Password invaild!");
         }
