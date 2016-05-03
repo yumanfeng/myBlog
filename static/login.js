@@ -1,3 +1,11 @@
+$(document).keydown(function (e){   
+    if(e.keyCode == 13){   
+        checkLogin();  
+    }   
+});   
+  
+
+
 function checkLogin() {
     var user = $("#user").val();
     var psw = $("#password").val();
@@ -32,7 +40,7 @@ function checkResponse() {
         // 反序列化
         var resp = JSON.parse(b);
         if (resp.status) {
-            window.location.href = "/panel";
+            window.location.href = "/";
         } else {
             $("#danger").html("Username or Password invaild!");
         }

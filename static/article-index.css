@@ -1,0 +1,46 @@
+
+/*article CSS*/
+
+
+/*article content container CSS*/
+hr{
+    margin-top: 0;
+}
+.article .content{
+    padding-right: 5%;
+}
+.article .one-writing{
+    overflow: hidden;
+}
+.article .content a{
+    color: #404040;
+}
+
+.article .content .writing-content{
+    color: #a3a3a3;
+    font-style: italic;
+}
+.article .content a:hover{
+    color: #0085a1;
+}
+.article .content a:hover .writing-content{
+    color: #0085a1;
+}
+.article .content .writing-meta{
+    color: gray;
+    font-style: italic;
+    float: right;
+    margin: 10px 0 0 0;
+    letter-spacing:1px;
+}
+/*article side container CSS*/
+.side h4 a{
+    color: gray;
+}
+.side li a{
+    color: #a3a3a3;
+}
+.side button{
+    border: 0;  
+    background-color: inherit;
+}

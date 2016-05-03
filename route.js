@@ -10,6 +10,9 @@ var multer = require('multer');
 // controllers
 var login = require('./controllers/login');
 var panel= require('./controllers/panel');
+var index = require('./controllers/index');
+var writing = require('./controllers/writing');
+var note = require('./controllers/note');
 
 
 // session
@@ -19,18 +22,48 @@ app.use(session({
   saveUninitialized: true,
 }));
 
+// Use handlebars as template engine（配置选择引擎handlebars）
+// app.engine("html", consolidate.handlebars);
+// app.set("view engine", "html");
+// app.set("views", __dirname + "/views");
+// // Register partials（注册模板）
+// var partials = "./views/partials/";
+// fs.readdirSync(partials).forEach(function (file) {
+//   var source = fs.readFileSync(partials + file, "utf8"),
+//     partial = /(.+)\.html/.exec(file).pop();
+//     Handlebars.registerPartial(partial, source);
+// });
+
+// 设置模板
+// app.set('view engine', 'html');
+// app.engine('html', require('hbs').__express);
+// // 注册模板
+// var hbs = require('hbs');
+// hbs.registerPartials(__dirname + '/views');
+// // 使用模版引擎
+// app.set('views', './view');
+// app.set('view engine', 'jade');
+
 
 app.use(bodyParser.json()); // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 
 app.use("/static",express.static('static'));
 app.use("/login",login);
-app.use("/panel",panel)
+app.use("/panel",panel);
+app.use("/",index);
+app.use("/writing/:year/:month/:day/:title",writing);
+app.use("/note/:year/:month/:day/:title",note);
+
+
 
 
 var server = app.listen(3000,function () {
     console.log("server is started");
 })
+
+
+
 
 
 // app.use("/download",express.static('/Users/mandy/Music/网易云音乐'));
