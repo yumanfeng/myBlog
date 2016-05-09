@@ -8,7 +8,7 @@
     <link href="/static/libs/font-awesome-4.6.1/css/font-awesome.min.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="/static/main.css">
     <link rel="stylesheet" type="text/css" href="/static/header.css">
-    <link rel="stylesheet" type="text/css" href="/static/article-{{pageName}}.css">
+    <link rel="stylesheet" type="text/css" href="/static/article-{{articleCSS}}.css">
      <link rel="stylesheet" type="text/css" href="/static/footer.css">
 </head>
 
@@ -29,8 +29,8 @@
     <script src="/static/main.js ">
 
     </script>
-    <script src="/static/{{pageName}}.js ">
-
+    <script src="/static/{{pageTitle}}.js ">
+    <!--.js的文件名及为页面title名-->
     </script>
 </body>
 

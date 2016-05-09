@@ -10,7 +10,7 @@ router.get('/', function (req, res) {
         article: tpl.compile('article-index.tpl')(),
         header:tpl.compile('header.tpl')(),
         footer:tpl.compile('footer.tpl')(),
-        pageName:"index",
+        articleCSS:"index",
         pageTitle:"index",
     })
     res.send(html);

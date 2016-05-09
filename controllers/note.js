@@ -11,10 +11,10 @@ router.get('/', function (req, res) {
     // 通过文章的内容，渲染模版
     // 把渲染出来的结果传递至客户端
     var html = t({
-        article: tpl.compile('article-note.tpl')(),
+        article: tpl.compile('article-writeAndNote.tpl')(),
         header:tpl.compile('header.tpl')(),
         footer:tpl.compile('footer.tpl')(),
-        pageName:"note",
+        articleCSS:"writeAndNote",
         pageTitle:"note",
     })
     res.send(html);

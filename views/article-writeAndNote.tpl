@@ -1,6 +1,6 @@
 <div class="row">
 
-    <!-- note Container -->
+    <!-- write Container -->
     <div class="
                 col-lg-8 col-lg-offset-2
                 col-md-10 col-md-offset-1
@@ -73,12 +73,54 @@
 
         <p>再见，2015。 启程，2016。
         </p>
-
-
+        <div>
+            <button><i class="fa fa-chevron-left" aria-hidden="true"></i>上一篇</button>
+            <button>下一篇<i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+        </div>
         <hr>
 
 
 
+    </div>
+
+    <!-- comment（评论） Container -->
+    <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+        评论区域
+        <hr>
+
+    </div>
+
+</div>
+<div class="list">
+    <div class="list-icon">
+        <i class="fa fa-th-list fa-2" aria-hidden="true"></i>
+
+    </div>
+    <div class="list-text">
+        <ul class="">
+            <li><a href="">博文标题</a></li>
+            <li><a href="">博文标题博文标题博文标题博文标题</a></li>
+            <li><a href="">博文标题</a></li>
+            <li><a href="">博文标题</a></li>
+            <li><a href="">博文标题</a></li>
+            <li><a href="">博文标题博文标题博文标题博文标题</a></li>
+            <li><a href="">博文标题</a></li>
+            <li><a href="">博文标题</a></li>
+            <li><a href="">博文标题</a></li>
+            <li><a href="">博文标题</a></li>
+        </ul>
+        <div class="page row">
+            <button class="col-md-4">&lt;</button>
+            <span class="pageNumber col-md-4">1</span>
+            <button class="goPage col-md-4">
+                <input type="text"> 
+                <span>Go</span>
+            </button>
+            <button class="col-md-4 pull-right">&gt;</button>
+        </div>
     </div>
 
 </div>

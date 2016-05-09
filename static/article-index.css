@@ -1,7 +1,6 @@
 
 /*article CSS*/
 
-
 /*article content container CSS*/
 hr{
     margin-top: 0;
@@ -9,31 +8,31 @@ hr{
 .article .content{
     padding-right: 5%;
 }
-.article .one-writing{
+.article .one-write{
     overflow: hidden;
 }
 .article .content a{
     color: #404040;
 }
 
-.article .content .writing-content{
+.article .content .write-content{
     color: #a3a3a3;
     font-style: italic;
 }
 .article .content a:hover{
-    color: #0085a1;
+    color: #eb7350;
 }
-.article .content a:hover .writing-content{
-    color: #0085a1;
+.article .content a:hover .write-content{
+    color: #eb7350;
 }
-.article .content .writing-meta{
+.article .content .write-meta{
     color: gray;
     font-style: italic;
     float: right;
     margin: 10px 0 0 0;
     letter-spacing:1px;
 }
-/*article side container CSS*/
+/*article side container CSS*/   
 .side h4 a{
     color: gray;
 }

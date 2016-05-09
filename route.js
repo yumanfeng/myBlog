@@ -11,7 +11,7 @@ var multer = require('multer');
 var login = require('./controllers/login');
 var panel= require('./controllers/panel');
 var index = require('./controllers/index');
-var writing = require('./controllers/writing');
+var write = require('./controllers/write');
 var note = require('./controllers/note');
 
 
@@ -52,7 +52,7 @@ app.use("/static",express.static('static'));
 app.use("/login",login);
 app.use("/panel",panel);
 app.use("/",index);
-app.use("/writing/:year/:month/:day/:title",writing);
+app.use("/write/:year/:month/:day/:title",write);
 app.use("/note/:year/:month/:day/:title",note);
 
 

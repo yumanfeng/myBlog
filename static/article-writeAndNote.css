@@ -1,0 +1,96 @@
+/*去掉点击后自带的蓝色边框！丑死了！*/
+button{
+    outline:none;
+}
+input{
+    outline:none;
+}
+/*目录(list)CSS*/
+.list{
+    position: fixed;
+    top: 60px;
+    z-index: 1;
+    border: 1px solid #f2f2f2;
+    color: #a3a3a3;
+    border-radius: 4px;
+}
+/*目录图标(list-icon)CSS*/
+.list-icon{    
+    padding: 6px 6px 2px 6px;
+    background-color: white;
+    cursor: pointer;
+}
+.list-icon:hover{
+    color: #eb7350;
+}
+/*目录文本(list-text)CSS*/
+.list-text{
+    background-color: white;
+    font-size: 16px;
+    display: none; 
+}
+.list-text ul{
+    margin: 0;
+    padding-bottom: 10px;
+}
+.list-text li{
+    padding: 10px 10px 0 10px;
+}
+.list-text a{
+    color: #a3a3a3;
+    font-weight: bold;
+    display: block;
+}
+.list-text a:hover{
+    color: #eb7350;
+}
+/*目录分页(page)CSS*/
+.page{
+    margin: 0;
+    padding-bottom: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background-color: inherit;
+}
+.page button{
+    border: 0;
+    background-color: inherit;
+}
+.page button:hover{
+     color: #eb7350;
+}
+
+button.goPage {
+    border: 1px solid #a3a3a3;
+    height: 28px;
+    padding: 0;
+    display: none;
+}
+button.goPage:hover{
+    border-color: #eb7350;
+}
+
+.goPage input{
+    border: 0;
+    padding-left: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 26px;
+}
+.goPage span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 3px 10px 2px 10px;
+    font-size: 16px;
+    font-weight: normal;
+}
+.goPage span:hover{
+    background-color: #eb7350;
+    color: white;
+}
+
