@@ -13,6 +13,8 @@ var panel= require('./controllers/panel');
 var index = require('./controllers/index');
 var write = require('./controllers/write');
 var note = require('./controllers/note');
+var panelNote = require('./controllers/panelNote');
+var panelEdit = require('./controllers/panelEdit');
 
 
 // session
@@ -50,11 +52,13 @@ app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x
 
 app.use("/static",express.static('static'));
 app.use("/login",login);
-app.use("/panel",panel);
 app.use("/",index);
 app.use("/write/:year/:month/:day/:title",write);
 app.use("/note/:year/:month/:day/:title",note);
 
+app.use("/panel",panel);
+app.use("/panel/note",panelNote);
+app.use("/panel/edit",panelEdit);
 
 
 

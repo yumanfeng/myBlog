@@ -1,14 +1,15 @@
 var express = require('express');
-var router = express.Router();
 
+function main() {
+    var router = express.Router();
+    router.use("/",function(req,res,next) {
+        if(!req.session.user){
+            res.redirect('/login');
+        }else{
+            next();
+        }
+    })
+    return router;
+}
 
-// main controller
-router.use("/",function(req,res,next) {
-    if(!req.session.user){
-        res.redirect('/login');
-    }else{
-        next();
-    }
-})
-
-module.exports=router;
+module.exports=main;

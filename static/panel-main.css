@@ -1,0 +1,31 @@
+/*header CSS*/
+.nav{
+   background-color: rgba(255,255,255,0.9);
+   color: black;
+}
+.nav a:hover{
+    color: #eb7350;
+}
+header{
+    height: 60px;
+}
+/*article CSS*/
+button.add{
+    border: 0;
+    background: 0;
+}
+button.add:hover{
+    color: #eb7350;
+}
+.essayList{
+    overflow: hidden;
+    padding: 10px;
+    border-bottom: 1px dotted #a3a3a3;
+}
+.essayList .essayTitle{
+    float: left;
+}
+.essayList .essayEdit{
+    float: right;
+}
+

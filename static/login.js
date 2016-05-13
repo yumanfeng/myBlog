@@ -40,7 +40,7 @@ function checkResponse() {
         // 反序列化
         var resp = JSON.parse(b);
         if (resp.status) {
-            window.location.href = "/";
+            window.location.href = "/panel";
         } else {
             $("#danger").html("Username or Password invaild!");
         }

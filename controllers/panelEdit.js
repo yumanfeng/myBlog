@@ -3,13 +3,12 @@ var tpl = require('../handlebars')();
 // var tpl = Handlebars();
 
 router.get('/', function (req, res) {
-    console.log("call pannel")
     var t = tpl.compile('panel.tpl');
-    var html = t({
+    var html = t({  
         header: tpl.compile('panel-header.tpl')(),
-        article: tpl.compile('panel-article.tpl')(),
-        pageTitle: "panel-write",
-        articleCSS: "panel",
+        article: tpl.compile('panel-article-edit.tpl')(),
+        pageTitle: "panel-edit",
+        articleCSS: "edit",
     });
     res.send(html);
 });
