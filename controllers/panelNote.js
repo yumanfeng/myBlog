@@ -1,18 +1,8 @@
 var router = require('./main')();
-var tpl = require('../handlebars')();
-// var tpl = Handlebars();
+var list=require('./panelEssaiesList')
 
 router.get('/', function (req, res) {
-    console.log("bbbb call");
-    var t = tpl.compile('panel.tpl');
-    var html = t({
-        header: tpl.compile('panel-header.tpl')(),
-        article: tpl.compile('panel-article.tpl')(),
-        pageTitle: "panel-note",
-        articleCSS: "note",
-    });
-    res.send(html);
+   list.getEssaiesList('note',req,res)
 });
 
-
-module.exports=router;
+module.exports = router;

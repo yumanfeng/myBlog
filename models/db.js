@@ -32,6 +32,15 @@ function MongoDB(url, mongoClient) {
         });
     };
     // 删
+    this.delOne= function (collname,filter,cb) {
+        connect(function(db) {
+            var collection = db.collection(collname);
+                collection.deleteOne(filter, {},function(err, result) {
+                cb(err, result);
+                db.close();
+            });
+        });
+    }
     // 改
     
     // 查 findOne(collname, option, obj, callback)
@@ -45,5 +54,17 @@ function MongoDB(url, mongoClient) {
             });
         });
     };
+   
+   // collname：集合名字；query：查询条件；skip：跳过几条；limit：查几条；callback(err, docs);
+    this.find = function (collname,query,skip,limit,callback) {
+        connect(function (db) {
+             var collection = db.collection(collname);
+             collection.find(query).skip(skip).limit(limit).toArray(function (err,docs) {
+                 console.log(callback);
+                 callback(err,docs);
+                 db.close();
+             })
+        });
+    }
 }
 

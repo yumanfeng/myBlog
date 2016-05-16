@@ -1,3 +1,4 @@
+/*markdown CSS*/
 html, body, #editor {
   margin: 0;
   height: 100%;
@@ -30,3 +31,4 @@ textarea {
 code {
   color: #f66;
 }
+

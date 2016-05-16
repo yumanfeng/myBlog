@@ -35,6 +35,8 @@
     <script src="/static/main.js ">
 
     </script>
+    <script src="/static/ajax.js ">
+    </script>
     <script src="/static/{{pageTitle}}.js ">
         <!--.js的文件名及为页面title名-->
     </script>

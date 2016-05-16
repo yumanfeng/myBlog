@@ -10,6 +10,8 @@
     <link rel="stylesheet" type="text/css" href="/static/header.css">
     <link rel="stylesheet" type="text/css" href="/static/article-{{articleCSS}}.css">
      <link rel="stylesheet" type="text/css" href="/static/footer.css">
+     <script src="/static/libs/marked.js">
+    </script>
 </head>
 
 <body>

@@ -5,7 +5,8 @@
             </div>
             <ul class="pull-right">
                 <li>
-                    <a href="/write/:year/:month/:day/:title">博文</a>
+                    <!--<a href="/write/:year/:month/:day/:title">博文</a>-->
+                     <a href="/">博文</a>
                 </li>
                 <li>
                     <a href="/note/:year/:month/:day/:title">笔记</a>
