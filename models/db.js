@@ -1,10 +1,5 @@
 /// <reference path="../typings/main.d.ts" />
 
-exports.url = 'mongodb://localhost:27017/blog';
-exports.mongoClient = require('mongodb').MongoClient;
-exports.salt = "agfsdga[fdpinlibdjgbim]";
-exports.MongoDB=MongoDB;
-
 // url: MongoDB地址； mongoClient：MongoDB客户端实例
 function MongoDB(url, mongoClient) {
     var url = url;
@@ -68,3 +63,7 @@ function MongoDB(url, mongoClient) {
     }
 }
 
+exports.url = 'mongodb://localhost:27017/blog';
+exports.mongoClient = require('mongodb').MongoClient;
+exports.salt = "agfsdga[fdpinlibdjgbim]";
+exports.MongoDB=MongoDB;
