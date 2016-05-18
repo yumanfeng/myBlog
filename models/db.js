@@ -5,7 +5,7 @@ function MongoDB(url, mongoClient) {
     var url = url;
     var mongoClient = mongoClient;
     // 获取MongoDB连接 connect(url, function(err, db)）
-    // url: MongoDB地址；db：连接
+    // url: MongoDB地址；db：MongoDB自带的连接
     var connect = function(callback) { 
         mongoClient.connect(url, function(err, db) {
             if (err) {
@@ -26,12 +26,13 @@ function MongoDB(url, mongoClient) {
             });
         });
     };
-    // 删
-    this.delOne= function (collname,filter,cb) {
+    // 删 delOne(collname,filter,callback)
+    // collname：集合名字；filter：删除条件如｛ID：1，｝；callback(err, result)
+    this.delOne= function (collname,filter,callback) {
         connect(function(db) {
             var collection = db.collection(collname);
                 collection.deleteOne(filter, {},function(err, result) {
-                cb(err, result);
+                callback(err, result);
                 db.close();
             });
         });
