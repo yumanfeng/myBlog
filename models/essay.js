@@ -10,7 +10,7 @@ function Essay(title, body, time, type) {
     essay.body = body;
     essay.time = time;
     essay.type = type;
-    essay.id = startTime+"" + startID
+    essay.id = startTime+"" + startID;
     startID++;
 
     this.save = function (cb) {

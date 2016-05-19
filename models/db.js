@@ -37,7 +37,6 @@ function MongoDB(url, mongoClient) {
             });
         });
     }
-    // 改
     
     // 查 findOne(collname, option, obj, callback)
     // collname：集合名字；option：更复杂的查询；obj：需要查找的对象；callback(err, doc);
