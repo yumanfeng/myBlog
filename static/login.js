@@ -33,7 +33,6 @@ function checkValue(user, psw) {
 }
 // req:  {"user":[string],"password":[string]}
 // resp: {"status":[boolean]}
-// 
 function checkResponse() {
     if (xmlHttpRequest.readyState == 4 && xmlHttpRequest.status == 200) {
         var b = xmlHttpRequest.responseText;

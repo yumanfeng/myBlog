@@ -9,7 +9,7 @@
                      <a href="/">博文</a>
                 </li>
                 <li>
-                    <a href="/note/:year/:month/:day/:title">笔记</a>
+                    <a href="/note">笔记</a>
                 </li>
                 <li>
                     <a href="">待定</a>

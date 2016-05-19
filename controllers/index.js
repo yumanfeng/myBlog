@@ -10,7 +10,7 @@ router.get('/', function (req, res) {
         page = 1;
     }
     list.getListCallback('write', page, function (result) {
-        console.log(result);
+        // console.log(result);
         var t = tpl.compile('index.tpl');
         var html = t({
             article: tpl.compile('article-index.tpl')(result),

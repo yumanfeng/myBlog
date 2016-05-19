@@ -5,7 +5,7 @@
             <div class="
                 col-lg-10 col-lg-offset-1
                 col-md-10 col-md-offset-1">
-                <a href="/panel/edit" class="add" title="新增博文">
+                <a href="/panel/edit" class="add" title="新增">
                     <i class="fa fa-plus-square-o fa-3" aria-hidden="true"></i>
                     <!--TODO: Button上使用ToolTip-->
                     </a>

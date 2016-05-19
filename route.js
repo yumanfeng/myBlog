@@ -11,6 +11,7 @@ var multer = require('multer');
 var login = require('./controllers/login');
 var panel= require('./controllers/panel');
 var index = require('./controllers/index');
+var indexNote = require('./controllers/index-note');
 var write = require('./controllers/write');
 var note = require('./controllers/note');
 var panelNote = require('./controllers/panelNote');
@@ -53,6 +54,7 @@ app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x
 app.use("/static",express.static('static'));
 app.use("/login",login);
 app.use("/",index);
+app.use("/note",indexNote);
 app.use("/write/:year/:month/:day/:title",write);
 app.use("/note/:year/:month/:day/:title",note);
 
