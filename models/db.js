@@ -56,12 +56,11 @@ function MongoDB(url, mongoClient) {
         connect(function (db) {
              var collection = db.collection(collname);
              collection.find(query).skip(skip).limit(limit).toArray(function (err,docs) {
-                 console.log(callback);
                  callback(err,docs);
                  db.close();
              })
         });
-    }
+    };
 }
 
 exports.url = 'mongodb://localhost:27017/blog';
